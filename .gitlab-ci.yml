@@ -1,0 +1,28 @@
+cache:
+  paths:
+    - node_modules/
+
+stages:
+  - setup
+  - test
+
+setup:
+  stage: setup
+  image: node:12.16.1
+  script:
+    - npm install
+
+e2e:chrome:
+  stage: test
+  image: trion/ng-cli-e2e
+  script:
+    - npm install
+    - npm run test
+    - npm run report:generate
+  artifacts:
+    expire_in: 1 week
+    name: automation-report
+    paths:
+      - reports/html-reports/master-report.html
+      - allure-report
+    when: always
