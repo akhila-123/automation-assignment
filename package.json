@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://gitlab.com/akhilabandiki06/zivver-automation-assignmnet/issues"
   },
-  "homepage": "https://gitlab.com/akhilabandiki06/zivver-automation-assignmnet#readme"
+  "homepage": "https://gitlab.com/akhilabandiki06/zivver-automation-assignmnet#readme",
+  "dependencies": {
+    "cypress": "^6.8.0"
+  }
 }
