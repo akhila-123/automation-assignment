@@ -18,11 +18,3 @@ e2e:chrome:
   script:
     - npm install
     - npm run test
-    - npm run report:generate
-  artifacts:
-    expire_in: 1 week
-    name: automation-report
-    paths:
-      - reports/html-reports/master-report.html
-      - allure-report
-    when: always
