@@ -18,4 +18,5 @@ e2e:chrome:
   image: trion/ng-cli-e2e
   script:
     - npm install
+    - npm install cypress
     - npm run test
