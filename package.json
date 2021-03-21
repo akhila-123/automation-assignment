@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --headless --browser chrome"
+    "clean:reports": "rm -rf cypress/reports && mkdir -p cypress/reports/html",
+    "pretest": "npm run clean:reports",
+    "test:chrome": "cypress run --headless --browser chrome",
+    "test:firefox": "cypress run --headless --browser firefox"
   },
   "repository": {
     "type": "git",

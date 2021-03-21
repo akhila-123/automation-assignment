@@ -1,7 +1,6 @@
 cache:
   paths:
     - node_modules/
-    - /tmp/.cache/Cypress
 
 stages:
   - setup
@@ -15,8 +14,17 @@ setup:
 
 e2e:chrome:
   stage: test
-  image: trion/ng-cli-e2e
+  image: cypress/browsers:node12.14.1-chrome85-ff81
   script:
     - npm install
     - npm install cypress
-    - npm run test
+    - npm run test:chrome
+
+e2e:firefox:
+  stage: test
+  image: cypress/browsers:node12.14.1-chrome85-ff81
+  script:
+    - npm install
+    - npm install cypress
+    - npm run test:firefox
+
