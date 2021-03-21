@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean:reports": "rm -rf cypress/reports && mkdir -p cypress/reports/html",
+    "clean:reports": "rm -rf cypress/results && mkdir -p cypress/results",
     "pretest": "npm run clean:reports",
     "test:chrome": "cypress run --headless --browser chrome",
     "test:firefox": "cypress run --headless --browser firefox"
