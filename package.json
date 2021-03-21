@@ -1,5 +1,5 @@
 {
-  "name": "zivver-automation-assignmnet",
+  "name": "automation-assignmnet",
   "version": "1.0.0",
   "description": "Automation assignment with Cypress",
   "main": "index.js",
