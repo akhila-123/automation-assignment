@@ -17,6 +17,7 @@ e2e:chrome:
   image: cypress/browsers:node12.14.1-chrome85-ff81
   script:
     - npm install
+    - npm install cypress
     - npm run test
   artifacts:
     when: always
