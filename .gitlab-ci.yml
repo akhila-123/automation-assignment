@@ -19,6 +19,7 @@ e2e:chrome:
     - npm install
     - npm install cypress
     - npm run test:chrome
+    - npm run generate:report
   artifacts:
     when: always
     paths:
@@ -27,18 +28,5 @@ e2e:chrome:
       - cypress/results/*.html
     expire_in: 1 day
 
-e2e:firefox:
-  stage: test
-  image: cypress/browsers:node12.14.1-chrome85-ff81
-  script:
-    - npm install
-    - npm install cypress
-    - npm run test:firefox
-  artifacts:
-    when: always
-    paths:
-      - cypress/videos/**/*.mp4
-      - cypress/screenshots/**/*.png
-      - cypress/results/*.html
-    expire_in: 1 day
+
 

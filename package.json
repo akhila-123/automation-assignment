@@ -7,7 +7,8 @@
     "clean:reports": "rm -rf cypress/results && mkdir -p cypress/results",
     "pretest": "npm run clean:reports",
     "test:chrome": "cypress run --headless --browser chrome",
-    "test:firefox": "cypress run --headless --browser firefox"
+    "test:firefox": "cypress run --headless --browser firefox",
+    "generate:reprot": "cypress run --reporter mochawesome"
   },
   "repository": {
     "type": "git",
