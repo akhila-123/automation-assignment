@@ -19,7 +19,7 @@ e2e:chrome:
     - npm install
     - npm install cypress
     - npm run test:chrome
-    - npm run generate:report
+    - npm run generate:reports
   artifacts:
     when: always
     paths:
