@@ -27,7 +27,7 @@ To generate report
 npm run combine-reports && npm run generate-reports
 ```
 
-## To view html reports
+## To view html reports and videos
 - After running tests and running generate-reports command.verify `cypress/reports/html/report.html` file.
 - After job has completed download the artifacts and unzip the file. Open `cypress/reports/html/report.html` for the html automation report and open `cypress/reports/html/videos/specs.*.mp4` for video recording
 
