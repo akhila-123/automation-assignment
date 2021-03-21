@@ -25,5 +25,10 @@
   "homepage": "https://gitlab.com/akhilabandiki06/zivver-automation-assignmnet#readme",
   "dependencies": {
     "cypress": "^6.8.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
   }
 }

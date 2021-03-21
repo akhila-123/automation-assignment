@@ -14,17 +14,31 @@ setup:
 
 e2e:chrome:
   stage: test
-  image: cypress/browsers:node12.14.1-chrome85-ff81
+  image: cypress/browsers:node12.14.1-chrome85
   script:
     - npm install
     - npm install cypress
     - npm run test:chrome
+  artifacts:
+    when: always
+    paths:
+      - cypress/videos/**/*.mp4
+      - cypress/screenshots/**/*.png
+      - cypress/results/*.html
+    expire_in: 1 day
 
 e2e:firefox:
   stage: test
-  image: cypress/browsers:node12.14.1-chrome85-ff81
+  image: cypress/browsers:node12.14.1-ff81
   script:
     - npm install
     - npm install cypress
     - npm run test:firefox
+  artifacts:
+    when: always
+    paths:
+      - cypress/videos/**/*.mp4
+      - cypress/screenshots/**/*.png
+      - cypress/results/*.html
+    expire_in: 1 day
 
