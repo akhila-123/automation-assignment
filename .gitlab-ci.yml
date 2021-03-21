@@ -17,16 +17,13 @@ e2e:chrome:
   image: cypress/browsers:node12.14.1-chrome85-ff81
   script:
     - npm install
-    - npm install cypress
-    - npm run test:chrome
-    - npm run generate:reports
+    - npm run test
   artifacts:
     when: always
     paths:
-      - cypress/videos/**/*.mp4
-      - cypress/screenshots/**/*.png
-      - cypress/results/*.html
-    expire_in: 1 day
+      - cypress/reports/videos/**/*.mp4
+      - cypress/reports/*.html
+    expire_in: 1 week
 
 
 

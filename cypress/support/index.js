@@ -14,16 +14,16 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import "./commands";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
-before(()=>{
-    cy.log("=================Test Begins===========");
-    cy.visit('https://todomvc.com/examples/angular2/');
-})
+before(() => {
+  cy.log("=================Test Begins===========");
+  cy.visit("https://todomvc.com/examples/angular2/");
+});
 
-after(()=>{
-    cy.log("=================Test Completed==========");
-})
+after(() => {
+  cy.log("=================Test Completed==========");
+});

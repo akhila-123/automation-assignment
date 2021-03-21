@@ -1,14 +1,16 @@
 {
   "name": "zivver-automation-assignmnet",
   "version": "1.0.0",
-  "description": "",
+  "description": "Automation assignment with Cypress",
   "main": "index.js",
   "scripts": {
-    "clean:reports": "rm -rf cypress/results && mkdir -p cypress/results",
+    "clean:reports": "rm -rf cypress/reports && mkdir -p cypress/reports/html",
     "pretest": "npm run clean:reports",
-    "test:chrome": "cypress run --headless --browser chrome",
-    "test:firefox": "cypress run --headless --browser firefox",
-    "generate:reports": "cypress run --reporter mochawesome"
+    "combine-reports": "mochawesome-merge cypress/reports/*.json > cypress/reports/html/report.json",
+    "generate-reports": "marge cypress/reports/html/report.json -f report -o cypress/reports/html -i true",
+    "posttest": "npm run combine-reports && npm run generate-reports",
+    "test": "cypress run --headless --browser chrome",
+    "pre-commit": "prettier --write cypress/**/**/*.{js,json}"
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,7 @@
   "devDependencies": {
     "mochawesome": "^6.2.2",
     "mochawesome-merge": "^4.2.0",
-    "mochawesome-report-generator": "^5.2.0"
+    "mochawesome-report-generator": "^5.2.0",
+    "prettier": "^2.2.1"
   }
 }

@@ -1,9 +1,15 @@
 {
+    "viewportWidth": 1600,
+    "viewportHeight": 1080,
     "reporter": "mochawesome",
     "reporterOptions": {
-        "reportDir": "cypress/results",
+        "reportDir": "cypress/reports",
+        "quite": true,
         "overwrite": false,
-        "html": true,
-        "json": false
-      }
+        "html": false,
+        "json": true
+      },
+    "screenshotsFolder": "cypress/reports/html/screenshots",
+    "videosFolder": "cypress/reports/html/videos",
+    "video": true
 }
