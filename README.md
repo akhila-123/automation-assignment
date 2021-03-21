@@ -1,4 +1,4 @@
-# zivver-automation-assignmnet-with-cypress
+# automation-assignmnet-with-cypress
 Cypress is a next generation front end testing tool built for the modern web. Cypress enables to write all types of tests like end-to-end tests, integration tests and unit tests. Some important features of cypress are time travel, debuggability, automatin waiting, network traffic control etc which helps to remove flakiness in tests.
 
 ## Assignment information
