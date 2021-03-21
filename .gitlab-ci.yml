@@ -14,7 +14,7 @@ setup:
 
 e2e:chrome:
   stage: test
-  image: cypress/browsers:node12.14.1-chrome85
+  image: cypress/browsers:node12.14.1-chrome85-ff81
   script:
     - npm install
     - npm install cypress
@@ -29,7 +29,7 @@ e2e:chrome:
 
 e2e:firefox:
   stage: test
-  image: cypress/browsers:node12.14.1-ff81
+  image: cypress/browsers:node12.14.1-chrome85-ff81
   script:
     - npm install
     - npm install cypress
