@@ -11,6 +11,5 @@
       },
     "screenshotsFolder": "cypress/reports/html/screenshots",
     "videosFolder": "cypress/reports/html/videos",
-    "video": true,
-    "retries":2
+    "video": true
 }

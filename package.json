@@ -10,22 +10,22 @@
     "generate-reports": "marge cypress/reports/html/report.json -f report -o cypress/reports/html -i true",
     "posttest": "npm run combine-reports && npm run generate-reports",
     "test": "cypress run --headless --browser chrome",
+    "cy:open": "cypress open",
     "pre-commit": "prettier --write cypress/**/**/*.{js,json}"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/akhilabandiki06/zivver-automation-assignmnet.git"
+    "url": "git+https://github.com/akhila-123/automation-assignment.git"
   },
   "keywords": [
-    "zivver",
     "cypress"
   ],
   "author": "Akhila Bandiki",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/akhilabandiki06/zivver-automation-assignmnet/issues"
+    "url": "https://gitlab.com/akhilabandiki06/automation-assignmnet/issues"
   },
-  "homepage": "https://gitlab.com/akhilabandiki06/zivver-automation-assignmnet#readme",
+  "homepage": "https://gitlab.com/akhilabandiki06/automation-assignmnet#readme",
   "dependencies": {
     "cypress": "^6.8.0"
   },
